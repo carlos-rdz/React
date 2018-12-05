@@ -10,7 +10,7 @@ class App extends Component {
     scores: [
       {
         id:1,
-        name: "carlos",
+        name: "charles",
         score: 1001
       },
       {
@@ -52,7 +52,7 @@ class App extends Component {
   };
 
 _incrementScoreById(id){
-  
+
 
 }
 
