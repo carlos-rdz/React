@@ -1,12 +1,21 @@
 import React from 'react';
 
-export class Display extends React.Component {
 
-     constructor(props){
-         super(props)
-     }
 
-    render(){
-        return <h1> {this.props.text} </h1>
-    }
+function convertDates(ourDates){
+    const DatesAsListItems = ourDates.map((dateString) => {
+        return (<li>{dateString}</li>);
+});
+return DatesAsListItems
 }
+
+const DateList = (props) => {
+    return (
+        <ul>
+        {convertDates(props.dates)}
+        </ul>
+    );
+}
+
+
+export default DateList;
